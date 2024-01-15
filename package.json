@@ -26,7 +26,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start --port ${PORT-80}",
+    "start": "next start",
     "export": "yarn build && next export -o _static",
     "prepare": "husky install"
   },
