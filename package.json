@@ -24,9 +24,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "npm run build",
-    "start": "npm run start",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && next",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && /home/site/wwwroot/node_modules/next/dist/bin/next --openssl- 
+ legacy-provider start",
     "export": "yarn build && next export -o _static",
     "prepare": "husky install"
   },
